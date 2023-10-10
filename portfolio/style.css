@@ -1,12 +1,13 @@
-root {
+:root {
 --text: #130e01;
 --background: #f8f0e7;
 --primary: #062756;
 --secondary: #eadbc8;
 --accent: #dbc2a4;
+--main-background: #fdfdfd;
 }
 
-/* root {
+/* :root {
 --text: #262423;
 --background: #f6f1f1;
 --primary: #977F77;
@@ -19,14 +20,14 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-color: var(--background);
+    background-color: var(--main-background);
 }
 
 p {
     color: var(--text);
-}
+} 
 h2 {
-    color: #062756;
+    color: var(--primary);
 }
 
   .menu-container {
@@ -34,8 +35,8 @@ h2 {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    background: #f8f0e7;
-    color: #73736f;
+    background: var(--background);
+    color: var(--secondary);
     padding: 20px;
     z-index: 1;
     -webkit-user-select: none;
@@ -56,12 +57,12 @@ h2 {
   
   .menu-container a {
     text-decoration: none;
-    color: #f8f0e7;
+    color: var(--background);
     transition: color 0.3s ease;
   }
   
   .menu-container a:hover {
-    color: #062756;
+    color: var(--primary);
   }
   
   .menu-container input {
@@ -83,7 +84,7 @@ h2 {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #73736f;
+    background: var(--accent);
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -103,7 +104,7 @@ h2 {
   .menu-container input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(3px,-1px);
-    background: #f8f0e7;
+    background: var(--background);
   }
   
   .menu-container input:checked ~ span:nth-child(4) {
@@ -150,7 +151,7 @@ h2 {
       top: 0;
       margin: -20px;
       padding: 75px 50px 50px;
-      background: #73736f;
+      background: var(--accent);
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
       transform-origin: 0% 0%;
