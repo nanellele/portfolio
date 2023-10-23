@@ -1,19 +1,19 @@
-:root {
+/* :root {
 --text: #130e01;
 --background: #f8f0e7;
 --primary: #062756;
 --secondary: #eadbc8;
 --accent: #dbc2a4;
 --main-background: #fdfdfd;
-}
+} */
 
-/* :root {
+:root {
 --text: #262423;
 --background: #f6f1f1;
 --primary: #977F77;
 --secondary: #EEE4CC;
 --accent: #B8C5D0;
-} */
+}
 
 body {
     text-align: center;
