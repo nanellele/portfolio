@@ -79,6 +79,20 @@ const jewel = new THREE.Mesh(
 );
 scene.add(jewel)
 
+// move camera on scroll
+function moveCamera() {
+  const t = document.body.getBoundingClientRect().top;
+  jewel.rotation.x += 0.05;
+  jewel.rotation.y += 0.075;
+  jewel.rotation.z += 0.05;
+
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.position.y = t * -0.0002;
+}
+
+document.body.onscroll = moveCamera
+
 // animate function
 function animate() {
   requestAnimationFrame(animate);
