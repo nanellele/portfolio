@@ -1,116 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="logo1.png" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nanelle Le</title>
   </head>
   <body>
-    <canvas id="bg"></canvas>
-    <main>
-      <main>
+    <header>
+      <nav class="menu-container">
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
 
-        <header>
-          <nav class="menu-container">
-            <!-- burger menu -->
-            <input type="checkbox" aria-label="Toggle menu" />
-            <span></span>
-            <span></span>
-            <span></span>
-          
-            <!-- logo -->
-            <a href="#" class="menu-logo">
-              <img src="logo1.png" alt="My Awesome Website"/>
-            </a>
-          
-            <!-- menu items -->
-            <div class="menu">
-              <ul>
-                <li>
-                  <a href="#about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#projects">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a href="#Resume">
-                    Resume
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="github">
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a href="LinkedIn">
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+        <!-- logo -->
+        <a href="#" class="menu-logo">
+          <img src="./assets/logo.png" alt="N Logo" />
+        </a>
 
-  
-        <section id="about">
-          <h2>📜 Manifesto</h2>
+        <!-- menu items -->
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#projects"> Projects </a>
+            </li>
+            <li>
+              <a href="#resume"> Resume </a>
+            </li>
+            <li>
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="github"> Github </a>
+            </li>
+            <li>
+              <a href="LinkedIn"> LinkedIn </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <div id="container">
+      <div id="main">
+        <div id="about">
+          <h1>About Me</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            I am a new graduate with a Bachelor's degree in Computer Science from Elms College. I am interested in frontend development and
+            cybersecurity. 
           </p>
-  
+        </div>
+        <div id="projects">
+          <h1>Projects</h1>
+            <h2><a href="https://nanellele.github.io/starSound/">starSound</a></h2>
+            <p>
+              <img src="./assets/starSound.png" class="demoImage">
+              A music player that allows users to search for videos and songs on youtube. 
+              <a href="https://github.com/nanellele/starSound">Code</a>
+            </p>
+            <h2><a href="https://replit.com/@nanelle/CIT-3606-Final-Project">movieHub</a></h2>
+            <p>
+              <img src="./assets/movieHub.png" class="demoImage">
+              A movie database that allows users to search for movies and tv shows. 
+              <a href="https://github.com/nanellele/Moviehub">Code</a>
+            </p>
+            <h2><a href="https://nanellele.github.io/tinybakery/">tiny bakery</a></h2>
+            <p>
+              <img src="./assets/tinybakery.png" class="demoImage">
+              A website for a bakery that allows users to order cakes and cupcakes. 
+              <a href="https://github.com/nanellele/tinybakery">Code</a>
+            </p>
+            <h2><a href="https://replit.com/@nanelle/Lab10-Full-Stack-ReactNext">Elms Patrons</a></h2>
+            <p>
+              <img src="./assets/patronSearch.png" class="demoImage">
+              A customer database that allows users to search and view customers. 
+            </p>
+            <h2><a href="https://replit.com/@nanelle/memorygrid">Pokemon Match</a></h2>
+            <p>
+              <img src="./assets/memoryMatch.png" class="demoImage">
+              A memory game that allows users to match pokemon cards.
+            </p>
+          </div>
+        <div id="resume">
+          <h1>Resume</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="./assets/resume.pdf" target="_blank">Resume</a>
           </p>
-  
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-  
-        </section>
-  
-        <section class="light" id="projects">
-          <h2>👩🏽‍🚀 Projects</h2>
-  
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-  
-          <h2>🏆 Accomplishments</h2>
-  
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-  
-        </section>
-  
-  
-        <section class="left" id="Resume">
-          <h2>Resume</h2>
-  
-          <p>
-            <object data="resume.pdf" type="pdf/html" width="100%"></object>
-          </p>
-          
-  
-        </section>
-  
-  
-  
-      </main>
-      
-    <script type="module" src="/main.js"></script>
+          </div>
+          <div id="contact">
+            <h1>Contact</h1>
+            <p>
+              <a href="mailto:nanellele@gmail.com">Email</a>
+          </div>
+    </div>
+
+
+
+
+
+
+
   </body>
 </html>

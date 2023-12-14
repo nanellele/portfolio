@@ -6,7 +6,7 @@
   --dark-bg: rgba(255, 255, 255, 0.75);
   --spacing: 350px;
   --text: #130e01;
-  --background: #ffffff;
+  --background: #F8F0E7;
   --primary: #062756;
   --secondary: #ffffff;
   --accent: #ffffff;
@@ -14,32 +14,6 @@
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-
-main {
-  width: 100vw;
-  color: rgb(0, 0, 0);
-  z-index: 99;
-  position: absolute;
-  width: 100%;
-  margin: 0px auto;
-  padding: 120px 0px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-h1, h2, h3, blockquote {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  border-radius: 5px;
-}
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 
@@ -54,36 +28,6 @@ canvas {
     z-index: 999;
   }
 
-  section {
-    grid-column: 2 / 8;
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-    border-radius: 5px;
-  }
-
-  blockquote {
-    margin: 0;
-    padding: 0;
-    grid-column: 2 / span 9;
-    margin-bottom: var(--spacing);
-    border-radius: 5px;
-  }
-
-  blockquote p {
-    color: rgb(0, 0, 0);
-    background-color: white;
-    font-size: 4rem;
-    display: inline;
-    line-height: 1;
-    border-radius: 5px;
-  }
-
-  .left {
-    grid-column: 6 / 12;
-  }
 
 
   /* header css */
