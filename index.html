@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slideshow.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -36,18 +37,15 @@
               <a href="#projects"> Projects </a>
             </li>
             <li>
-              <a href="#resume"> Resume </a>
-            </li>
-            <li>
               <a href="#contact"> Contact </a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="github"> Github </a>
+              <a href="https://github.com/nanellele/"><i class='bx bxl-github'></i></a>
             </li>
             <li>
-              <a href="LinkedIn"> LinkedIn </a>
+              <a href="https://www.linkedin.com/in/nanelle-le/"><i class='bx bxl-linkedin-square'></i></a>
             </li>
           </ul>
         </div>
@@ -69,107 +67,161 @@
             <br />
             I'm Nanelle Le.
           </h1>
+          <div id="buttons">
           <a href="#about" class="btn">About Me</a>
+          <a href="./assets/resume.pdf" target="_blank" class="btn">Resume</a>
+        </div>
         </div>
       </div>
 
       <!-- about section -->
       <div class="about-container">
-      <div id="about" class="row">
-        <div class="column">
-        <h1>About Me</h1>
-        <p>
-          I am a new graduate with a Bachelor's degree in Computer Science from
-          Elms College. I am interested in frontend development and
-          cybersecurity.
-        </p>
+        <div id="about" class="row">
+          <div class="column">
+            <h1>About Me</h1>
+            <p>
+              Hi, I’m Nanelle Le. I’m a recent graduate from Elms College with a Bachelors in Computer Science. I’m pursuing a career in web development as an aspiring front end developer. I’ve always been fond of design and styling, which is what led me to web development. My goal is to engage users so that their experience with websites can be simple and efficient.
+            </p>
+          </div>
+          <div class="column">
+            <h2>Education</h2>
+            <br>
+            <h3>Elms College</h3>
+            <ul>
+              <li>Bachelor of Arts in Computer Science</li>
+              <li>Graduated December 2023</li>
+            </ul>
+            <br>
+            <h3>Holyoke Community College</h3>
+            <ul>
+              <li>Associates of Science in General Health Studies</li>
+            </ul>
+            <br>
+            <h3>Tech Foundry</h3>
+            <ul>
+              <li>IT Support Training Program</li>
+              <li>Graduated June 2023</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <h2>Education</h2>
-        <ul>
-          <li>Elms College</li>
-          <li>Bachelor of Arts in Computer Science</li>
-          <li>Graduated December 2023</li>
-        </ul>
-        <ul>
-          <li>Holyoke Community College</li>
-          <li>Associate's of Science in General Health Studies</li>
-          <li>Graduated May 2021</li>
-        </ul>
-      </div>
-      </div>
-    </div>
       <!-- about section ! -->
 
       <!-- projects section -->
       <div id="projects">
-        <h1>Projects</h1>
-        <h2><a href="https://nanellele.github.io/starSound/">starSound</a></h2>
-        <p>
-          <img src="./assets/starSound.png" class="demoImage" />
-          A music player that allows users to search for videos and songs on
-          youtube.
-          <a href="https://github.com/nanellele/starSound">Code</a>
-        </p>
-        <h2>
-          <a href="https://replit.com/@nanelle/CIT-3606-Final-Project"
-            >movieHub</a
-          >
-        </h2>
-        <p>
-          <img src="./assets/movieHub.png" class="demoImage" />
-          A movie database that allows users to search for movies and tv shows.
-          <a href="https://github.com/nanellele/Moviehub">Code</a>
-        </p>
-        <h2>
-          <a href="https://nanellele.github.io/tinybakery/">tiny bakery</a>
-        </h2>
-        <p>
-          <img src="./assets/tinybakery.png" class="demoImage" />
-          A website for a bakery that allows users to order cakes and cupcakes.
-          <a href="https://github.com/nanellele/tinybakery">Code</a>
-        </p>
-        <h2>
-          <a href="https://replit.com/@nanelle/Lab10-Full-Stack-ReactNext"
-            >Elms Patrons</a
-          >
-        </h2>
-        <p>
-          <img src="./assets/patronSearch.png" class="demoImage" />
-          A customer database that allows users to search and view customers.
-        </p>
-        <h2>
-          <a href="https://replit.com/@nanelle/memorygrid">Pokemon Match</a>
-        </h2>
-        <p>
-          <img src="./assets/memoryMatch.png" class="demoImage" />
-          A memory game that allows users to match pokemon cards.
-        </p>
+        <div id="slideshow">
+          <div class="slider" style="transform: translateX(0%)">
+            <div>
+              <div class="content">
+                <h2>
+                  starSound
+                </h2>
+                <img src="./assets/starSound.png" class="demoImage" />
+                <a href="https://github.com/nanellele/starSound"><i class='bx bxl-github' ></i></a>
+                <a href="https://nanellele.github.io/starSound/"><i class='bx bx-play-circle' ></i></a>
+                <p>
+                  A music player that allows users to search for videos and
+                  songs on youtube.
+                  <br>
+                  <i class='bx bxl-html5' style='color:#a6917c'></i>
+                  <i class='bx bxl-css3' style='color:#a6917c' ></i>
+                  <i class='bx bxl-javascript' style='color:#a6917c'  ></i>
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>
+                  movieHub
+                </h2>
+                <img src="./assets/movieHub.png" class="demoImage" />
+                <a href="https://github.com/nanellele/Moviehub"><i class='bx bxl-github'></i></a>
+                <a href="https://replit.com/@nanelle/CIT-3606-Final-Project"><i class='bx bx-play-circle'></i></a>
+                <p>
+                  A movie database that allows users to search for movies.
+                  <br>
+                  <i class='bx bxl-html5' style='color:#a6917c'></i>
+                  <i class='bx bxl-css3' style='color:#a6917c' ></i>
+                  <i class='bx bxl-react' style='color:#a6917c' ></i>
+                </p>
+            </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>
+                  tiny bakery
+                </h2>
+                <img src="./assets/tinybakery.png" class="demoImage" />
+                <a href="https://github.com/nanellele/tinybakery"><i class='bx bxl-github'></i></a>
+                <a href="https://nanellele.github.io/tinybakery/"><i class='bx bx-play-circle' ></i></a>
+                <p>
+                  A website for a bakery that allows users to order cakes and cupcakes.
+                  <br>
+                  <i class='bx bxl-html5' style='color:#a6917c'></i>
+                  <i class='bx bxl-css3' style='color:#a6917c' ></i>
+                </p>
+                <h2>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>
+                  Elms Patrons
+                </h2>
+                <img src="./assets/patronSearch.png" class="demoImage" />
+                <a href="https://replit.com/@nanelle/Lab10-Full-Stack-ReactNext"><i class='bx bx-play-circle'></i></a>
+                <p>
+                  A customer database that allows users to search and view customers.
+                  <br>
+                  <i class='bx bxl-html5' style='color:#a6917c'></i>
+                  <i class='bx bxl-css3' style='color:#a6917c' ></i>
+                  <i class='bx bxl-javascript' style='color:#a6917c'  ></i>
+                  <i class='bx bxl-react' style='color:#a6917c' ></i>
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>
+                  Pokemon Memory Match
+                </h2>
+                <img src="./assets/memoryMatch.png" class="demoImage" />
+                <a href="https://replit.com/@nanelle/memorygrid"><i class='bx bx-play-circle' style='color:#062756' ></i></a>
+                <p>
+                  A memory game that allows users to match pokemon cards.
+                  <br>
+                  <i class='bx bxl-python' style='color:#a6917c' ></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="prevNext">
+            <div><a class="previous" onclick="(e) => e.preventDefault();"><</a><a class="next" onclick="(e) => e.preventDefault();">></a></div>
+          </div>
+
+          <div class="bullets"></div>
+        </div>
       </div>
       <!-- projects section ! -->
 
-      <!-- resume section -->
-      <div id="resume">
-        <h1>Resume</h1>
-        <p>
-          <a href="./assets/resume.pdf" target="_blank">Resume</a>
-        </p>
-      </div>
-      <!-- resume section ! -->
-
       <!-- contact -->
+      <div class="contact-container">
       <div id="contact">
         <h1>Contact</h1>
         <p>
-          <a href="mailto:nanellele@gmail.com">Email</a>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqYw2gqMfJPE7ebmT6XMZNaRRUOLLuKmdu_9Lh8YrbWDIi5Q/viewform?embedded=true" width="640" height="851" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </p>
+      </div>
       </div>
       <!-- contact ! -->
 
       <!-- footer -->
       <footer>
-        <p>&copy; 2023 Nanelle Le. All rights reserved.</p>
+        <p>&copy; 2023 Nanelle Le 
+          <br> All rights reserved.</p>
       </footer>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>
