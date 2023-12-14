@@ -6,31 +6,159 @@
   --dark-bg: rgba(255, 255, 255, 0.75);
   --spacing: 350px;
   --text: #130e01;
-  --background: #F8F0E7;
+  --background: #F8F0E6;
   --primary: #062756;
-  --secondary: #ffffff;
-  --accent: #ffffff;
+  --secondary: #DBC1A4;
+  --accent: #EBDCC9;
   --main-background: #ffffff;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: var(--main-background);
+  color: var(--text);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  -moz-osx-font-smoothing: grayscale;
+  /* to stop flickering of text in safari */
+}
 
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: #000000;
-    padding: 0px;
-    z-index: 999;
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: -15px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1096%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 351.4Q36.47 315.87%2c 72 352.34Q139.34 347.68%2c 144 415.02Q194.01 345.03%2c 264 395.05Q312.84 323.89%2c 384 372.74Q436.52 305.26%2c 504 357.79Q594.32 328.11%2c 624 418.42Q647.06 369.48%2c 696 392.53Q739.22 363.75%2c 768 406.96Q807.71 326.67%2c 888 366.38Q938.86 297.24%2c 1008 348.1Q1097.59 317.69%2c 1128 407.27Q1175.07 334.33%2c 1248 381.4Q1300.03 313.43%2c 1368 365.46Q1424.69 350.15%2c 1440 406.84Q1468.55 363.39%2c 1512 391.94z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 420.55Q46.09 394.64%2c 72 440.73Q141.71 390.44%2c 192 460.15Q201.98 398.13%2c 264 408.1Q307.41 379.51%2c 336 422.92Q421.38 388.31%2c 456 473.69Q486.69 432.38%2c 528 463.06Q567.79 382.86%2c 648 422.65Q676.51 379.16%2c 720 407.68Q810.67 378.36%2c 840 469.03Q859.68 416.71%2c 912 436.4Q930.39 382.79%2c 984 401.18Q1027.98 373.16%2c 1056 417.15Q1103.97 393.12%2c 1128 441.09Q1195.35 388.43%2c 1248 455.78Q1289.56 377.34%2c 1368 418.9Q1454.22 385.12%2c 1488 471.33z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 484.02Q59.23 423.25%2c 120 482.47Q178.06 468.53%2c 192 526.59Q242.55 457.14%2c 312 507.69Q340.15 463.84%2c 384 491.99Q459.54 447.53%2c 504 523.07Q553.59 452.66%2c 624 502.25Q640.52 446.77%2c 696 463.29Q737.32 432.61%2c 768 473.92Q828.89 462.82%2c 840 523.71Q892.99 456.7%2c 960 509.68Q999.22 428.9%2c 1080 468.13Q1151.64 419.77%2c 1200 491.41Q1277.5 448.91%2c 1320 526.41Q1321.18 455.59%2c 1392 456.77Q1457.12 401.88%2c 1512 467z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 529.51Q85.73 495.24%2c 120 580.97Q120.11 509.08%2c 192 509.18Q281.54 478.72%2c 312 568.25Q332.62 516.87%2c 384 537.49Q405.83 487.32%2c 456 509.15Q522.52 455.67%2c 576 522.2Q623.72 497.92%2c 648 545.65Q720.13 497.78%2c 768 569.91Q803.11 485.01%2c 888 520.12Q967.58 479.7%2c 1008 559.28Q1075.13 506.4%2c 1128 573.53Q1149.4 522.93%2c 1200 544.34Q1245.97 470.31%2c 1320 516.27Q1378.77 503.04%2c 1392 561.81Q1444.88 494.69%2c 1512 547.57z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1096'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* home text animation */
+#home-text{
+  letter-spacing: .15em;
+  color: white;
+  position: relative;
+}
+#home-text span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
   }
+}
+
+/* home button */
+.btn {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--accent);
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+/* about section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.row {
+  display: flex;
+}
+.column{
+  flex: 50%;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+
+.demoImage {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 
 
 
   /* header css */
+
   .menu-container {
     position: relative;
     display: flex;
@@ -201,3 +329,4 @@
       padding: 0 20px;
     }
   }
+

@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="logo1.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nanelle Le</title>
+    <title>Nanelle</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <nav class="menu-container">
         <!-- burger menu -->
@@ -48,66 +53,123 @@
         </div>
       </nav>
     </header>
-
+    <!-- header ! -->
 
     <div id="container">
-      <div id="main">
-        <div id="about">
-          <h1>About Me</h1>
-          <p>
-            I am a new graduate with a Bachelor's degree in Computer Science from Elms College. I am interested in frontend development and
-            cybersecurity. 
-          </p>
+      <!-- home -->
+      <div id="home">
+        <div class="home-container">
+          <h1 id="home-text">
+            <span style="--i: 1">H</span>
+            <span style="--i: 2">e</span>
+            <span style="--i: 3">l</span>
+            <span style="--i: 4">l</span>
+            <span style="--i: 5">o</span>
+            <span style="--i: 8">,</span>
+            <br />
+            I'm Nanelle Le.
+          </h1>
+          <a href="#about" class="btn">About Me</a>
         </div>
-        <div id="projects">
-          <h1>Projects</h1>
-            <h2><a href="https://nanellele.github.io/starSound/">starSound</a></h2>
-            <p>
-              <img src="./assets/starSound.png" class="demoImage">
-              A music player that allows users to search for videos and songs on youtube. 
-              <a href="https://github.com/nanellele/starSound">Code</a>
-            </p>
-            <h2><a href="https://replit.com/@nanelle/CIT-3606-Final-Project">movieHub</a></h2>
-            <p>
-              <img src="./assets/movieHub.png" class="demoImage">
-              A movie database that allows users to search for movies and tv shows. 
-              <a href="https://github.com/nanellele/Moviehub">Code</a>
-            </p>
-            <h2><a href="https://nanellele.github.io/tinybakery/">tiny bakery</a></h2>
-            <p>
-              <img src="./assets/tinybakery.png" class="demoImage">
-              A website for a bakery that allows users to order cakes and cupcakes. 
-              <a href="https://github.com/nanellele/tinybakery">Code</a>
-            </p>
-            <h2><a href="https://replit.com/@nanelle/Lab10-Full-Stack-ReactNext">Elms Patrons</a></h2>
-            <p>
-              <img src="./assets/patronSearch.png" class="demoImage">
-              A customer database that allows users to search and view customers. 
-            </p>
-            <h2><a href="https://replit.com/@nanelle/memorygrid">Pokemon Match</a></h2>
-            <p>
-              <img src="./assets/memoryMatch.png" class="demoImage">
-              A memory game that allows users to match pokemon cards.
-            </p>
-          </div>
-        <div id="resume">
-          <h1>Resume</h1>
-          <p>
-            <a href="./assets/resume.pdf" target="_blank">Resume</a>
-          </p>
-          </div>
-          <div id="contact">
-            <h1>Contact</h1>
-            <p>
-              <a href="mailto:nanellele@gmail.com">Email</a>
-          </div>
+      </div>
+
+      <!-- about section -->
+      <div class="about-container">
+      <div id="about" class="row">
+        <div class="column">
+        <h1>About Me</h1>
+        <p>
+          I am a new graduate with a Bachelor's degree in Computer Science from
+          Elms College. I am interested in frontend development and
+          cybersecurity.
+        </p>
+      </div>
+      <div class="column">
+        <h2>Education</h2>
+        <ul>
+          <li>Elms College</li>
+          <li>Bachelor of Arts in Computer Science</li>
+          <li>Graduated December 2023</li>
+        </ul>
+        <ul>
+          <li>Holyoke Community College</li>
+          <li>Associate's of Science in General Health Studies</li>
+          <li>Graduated May 2021</li>
+        </ul>
+      </div>
+      </div>
     </div>
+      <!-- about section ! -->
 
+      <!-- projects section -->
+      <div id="projects">
+        <h1>Projects</h1>
+        <h2><a href="https://nanellele.github.io/starSound/">starSound</a></h2>
+        <p>
+          <img src="./assets/starSound.png" class="demoImage" />
+          A music player that allows users to search for videos and songs on
+          youtube.
+          <a href="https://github.com/nanellele/starSound">Code</a>
+        </p>
+        <h2>
+          <a href="https://replit.com/@nanelle/CIT-3606-Final-Project"
+            >movieHub</a
+          >
+        </h2>
+        <p>
+          <img src="./assets/movieHub.png" class="demoImage" />
+          A movie database that allows users to search for movies and tv shows.
+          <a href="https://github.com/nanellele/Moviehub">Code</a>
+        </p>
+        <h2>
+          <a href="https://nanellele.github.io/tinybakery/">tiny bakery</a>
+        </h2>
+        <p>
+          <img src="./assets/tinybakery.png" class="demoImage" />
+          A website for a bakery that allows users to order cakes and cupcakes.
+          <a href="https://github.com/nanellele/tinybakery">Code</a>
+        </p>
+        <h2>
+          <a href="https://replit.com/@nanelle/Lab10-Full-Stack-ReactNext"
+            >Elms Patrons</a
+          >
+        </h2>
+        <p>
+          <img src="./assets/patronSearch.png" class="demoImage" />
+          A customer database that allows users to search and view customers.
+        </p>
+        <h2>
+          <a href="https://replit.com/@nanelle/memorygrid">Pokemon Match</a>
+        </h2>
+        <p>
+          <img src="./assets/memoryMatch.png" class="demoImage" />
+          A memory game that allows users to match pokemon cards.
+        </p>
+      </div>
+      <!-- projects section ! -->
 
+      <!-- resume section -->
+      <div id="resume">
+        <h1>Resume</h1>
+        <p>
+          <a href="./assets/resume.pdf" target="_blank">Resume</a>
+        </p>
+      </div>
+      <!-- resume section ! -->
 
+      <!-- contact -->
+      <div id="contact">
+        <h1>Contact</h1>
+        <p>
+          <a href="mailto:nanellele@gmail.com">Email</a>
+        </p>
+      </div>
+      <!-- contact ! -->
 
-
-
-
+      <!-- footer -->
+      <footer>
+        <p>&copy; 2023 Nanelle Le. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
