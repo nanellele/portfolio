@@ -20,6 +20,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background: var(--main-background);
   color: var(--text);
   font-family: "Nunito", sans-serif;
@@ -136,7 +137,7 @@ h2 {
 }
 
 h3 {
-  color:#dbc1a4;
+  color: #dbc1a4;
 }
 
 a {
@@ -356,7 +357,6 @@ p {
   height: 100vh;
 }
 
-
 /* footer css */
 footer {
   margin-top: 2rem;
@@ -372,4 +372,15 @@ footer {
 
 footer p {
   color: white;
+}
+
+#contact {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#contact iframe {
+  max-width: 900px;
+  width: 90%;
 }
